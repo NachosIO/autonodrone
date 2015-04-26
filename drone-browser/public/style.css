@@ -1,5 +1,6 @@
 body {
-     font-family: sans-serif;
+    font-family: sans-serif;
+	background-color: #000;
 }
 #cam {
     margin: 0 auto;
@@ -13,12 +14,20 @@ body {
 	width: 640px;
 	margin: 0 auto;
 	margin-bottom: 10px;
+	margin-top:10px;
 }
 #stats {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 26px;
+    left: 50%;
+	width:300px;
+	transform:translateX(-50%);
+    font-size: 12px;
+}
+#stats div {
+    font-weight:bold;
+}
+#stats span {
+	font-weight:normal;
 }
 .buttons {
     text-align: center;
