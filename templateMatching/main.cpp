@@ -30,6 +30,8 @@ int main(int argc, char** argv)
         cv::Point(maxloc.x + tpl.cols, maxloc.y + tpl.rows),
         CV_RGB(0, 255, 0), 2
       );
+      line(ref, cv::Point(0,maxloc.y+tpl.rows), cv::Point(ref.cols, maxloc.y+tpl.rows) ,CV_RGB(255, 0, 0));
+      line(ref, cv::Point(0,maxloc.y), cv::Point(ref.cols, maxloc.y) ,CV_RGB(255, 0, 0));
       cv::floodFill(res, maxloc, cv::Scalar(0), 0, cv::Scalar(.1), cv::Scalar(1.));
     }
     else
